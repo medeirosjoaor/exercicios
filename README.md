@@ -75,6 +75,6 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 8.2: JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort
 - [ ] 8.3: JavaScript ES6 - Higher Order Functions - map e filter
 - [ ] 8.4: JavaScript ES6 - Higher Order Functions - reduce
-- [ ] 8.5: JavaScript ES6 - spread operator, parâmetro rest, destructing e mais
+- [ ] 8.5: JavaScript ES6 - Spread operator, parâmetro rest, destructing e mais
 - [ ] 8.6: Projeto - Zoo Functions
 
