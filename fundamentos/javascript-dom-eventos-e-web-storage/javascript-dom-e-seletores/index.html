@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.1</title>
+    
+    <style>
+      main, section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <header> 
+      <h1 class="title">Exercício 5.1 - JavaEscripito </h1>
+    </header>    
+    <main class="main-content">
+      <section class="center-content">
+        <p>Texto padrão do nosso site</p>
+        <p>-----</p>
+        <p>Trybe</p>
+      </section>
+    </main>
+    <script>
+      //1.
+      function changeText() {
+        const p = document.getElementsByTagName('p')[1];
+        p.innerText = 'Curabitur ac condimentum ante. Aenean viverra a leo quis tempor. Praesent eu dignissim quam. Quisque et efficitur mi, vitae hendrerit.'
+      }
+
+      changeText();
+
+      //2.
+      function changeYellowSquare() {
+        const mainContent = document.getElementsByClassName('main-content')[0];
+        mainContent.style.backgroundColor = 'rgb(76, 164, 109)';
+      }
+
+      changeYellowSquare();
+
+      //3.
+      function changeRedSquare() {
+        const centerContent = document.getElementsByClassName('center-content')[0];
+        centerContent.style.backgroundColor = 'white';
+      }
+
+      changeRedSquare();
+
+      //4.
+      function fixText() {
+        const h1 = document.getElementsByTagName('h1')[0];
+        h1.innerText = 'Exercício 5.1 - JavaScript';
+      }
+
+      fixText();
+
+      //5.
+      function toUpperCase() {
+        let p = document.getElementsByTagName('p');
+        
+        for (let element of p) {
+          element.innerText = element.innerText.toUpperCase();
+        }
+      }
+
+      toUpperCase();
+
+      //6.
+      function displayContent() {
+        let p = document.getElementsByTagName('p');
+
+        for (let element of p) {
+          console.log(element);
+        }
+      }
+
+      displayContent();
+    </script>
+  </body>
+</html>
