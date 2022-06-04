@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form name="form" action="#" method="get">
+    <div class="container">
+      <div class="name">
+        <label for="name">Nome: 
+          <input type="text" name="name" id="name" minlength="11" maxlength="39">
+        </label>
+      </div>
+      <div class="email">
+        <label for="email">E-mail: 
+          <input type="email" name="email" id="email" minlength="11" maxlength="49">
+        </label>
+      </div>
+      <div class="option">
+        <input type="radio" name="destination" id=""> Cidade
+        <input type="radio" name="destination" id=""> Campo
+        <input type="radio" name="destination" id=""> Praia
+        <input type="radio" name="destination" id=""> Montanhas
+      </div>
+      <div class="answer">
+        <label for="textarea">Espaço para digitar a resposta:
+          <textarea name="textarea" id="textarea" cols="30" rows="15" maxlength="500"></textarea>
+        </label>
+      </div>
+      <div class="date">
+        <label for="date">Data: 
+          <input type="date" name="date" id="date">
+        </label>
+      </div>
+      <div class="first-aggrement">
+        <label for="first-aggrement">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe? 
+          <input type="checkbox" name="first-aggrement" id="first-aggrement">
+        </label>
+      </div>
+      <div class="second-aggrement">
+        <label for="second-aggrement">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros. 
+          <input type="checkbox" name="second-aggrement" id="second-aggrement">
+        </label>
+      </div>
+    </div>
+    <button type="submit" id="submit">Enviar</button>
+    <button type="reset" id="reset">Apagar</button>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
